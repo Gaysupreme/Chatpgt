@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGPT - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+    <div class="auth-container">
+        <h1><span class="logo-red">Nex</span>GPT</h1>
+        
+        <div class="auth-box">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" placeholder="Usuário" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p>Não tem conta? <a href="#" id="registerToggle">Registre-se</a></p>
+        </div>
+
+        <div class="auth-box" id="registerBox" style="display: none;">
+            <h2>Registro</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="Usuário" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Registrar</button>
+            </form>
+            <p>Já tem conta? <a href="#" id="loginToggle">Faça login</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
